@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student List</h1><hr><br>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Roll</th>
+            <th>Gender</th>
+            <th>Address</th>
+        </tr>
+       </thead>
+       <tbody id="studentTable"></tbody>
+        </table>
+    <form id="studentForm"><br><br>
+        Name:<input type="text" id="name" name="name"><br><br>
+        Class:<select id="opt">
+            <option>Class-I</option>
+            <option>Class-II</option>
+            <option>Class-III</option>
+            <option>Class-IV</option>
+            <option>Class-V</option>
+            <option>Class-VI</option>
+            <option>Class-VII</option>
+            <option>Class-VIII</option>
+            <option>Class-IX</option>
+            <option>Class-X</option>
+            <option>Class-XI</option>
+            <option>Class-XII</option>
+        </select><br><br>
+        Roll:<input type="number" id="rl" name="rl"><br><br>
+        Gender:<input type="radio" name="gender" value="male" id="genM">Male
+        <input type="radio" name="gender" value="female" id="genF">Female<br><br>
+        Address:<textarea id="txtarea"></textarea><br><br>
+        <button onclick="addTbody()" id="btn" name="btn" type="button">Add Student</button>
+    </form>
+    <script>
+        function addTbody(){
+            let tb=document.getElementById("studentTable");
+            let name=document.getElementById("name");
+            let opt=document.getElementById("opt");
+            let rl=document.getElementById("rl");
+            let txt=document.getElementById("txtarea");
+            let genM = document.getElementById("genM");
+            let genF = document.getElementById("genF");
+            let studentForm = document.getElementById("studentForm");
+            let gndr;
+            if(genM.checked){
+                gndr=genM.value;
+            }else{
+                gndr=genF.value;
+            }
+            tb.innerHTML=`<tr>
+            <td>${name.value}</td>
+            <td>${opt.value}</td>
+            <td>${rl.value}</td>
+            <td>${gndr}</td>
+            <td>${txtarea.value}</td>
+            </tr>`;
+
+            studentForm.reset();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Letter:<input type="text" id="txt" name="txt" placeholder="vowel" maxlength="1"><br><br>
+        <button onclick="vowel()" type="button" id="btn" name="btn">Check</button><br><br>
+        <span id="output"></span>
+    </form>
+    <script>
+        function vowel(){
+            let ltr=document.getElementById("txt");
+            let spn=document.getElementById("output");
+            switch (ltr.value){
+                case "A":
+                case "E": 
+                case "I": 
+                case "O": 
+                case "U": 
+                case "a":
+                case "e":
+                case "i":
+                case "o":
+                case "u":
+                    spn.innerHTML="Vowel"
+                    break;
+                    default:
+                        spn.innerHTML="Not a vowel"
+            }
+        }
+    </script>
+</body>
+</html>

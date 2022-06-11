@@ -1,0 +1,13 @@
+package practice;
+
+public class MyApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student student1 = new Student();
+//		Date dt = new Date(10,12,2005);
+		dt.print();
+		System.out.println(dt);
+	}
+
+}

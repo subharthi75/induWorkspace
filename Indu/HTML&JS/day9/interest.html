@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    P:<input type="number" id="num" name="num">
+    T:<input type="number" id="time" name="time">
+    R:<input type="number" id="intrst" name="intrst"><br><br>
+    Interest:<span id="output"></span>
+    <button onclick="interest()" id="btn" name="btn" type="button">Calculation</button>
+    <script>
+        function interest(){
+            let p=document.getElementById("num");
+            let t=document.getElementById("time");
+            let r=document.getElementById("intrst");
+            let op=document.getElementById("output");
+            let calc=(p.value*t.value*r.value)/100;
+            op.innerHTML=calc;
+        }
+    </script>
+</body>
+</html>

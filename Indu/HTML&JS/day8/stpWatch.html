@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <span id="output" ></span>
+        <button onclick="btnStart()" id="btn1" name="btn1" type="button">Start</button>
+        <button onclick="stp()" id="btn2" name="btn2" type="button">Stop</button>
+    </form>
+    <script>
+        let count=0;
+        let myTimer;
+        function btnStart(){
+            // console.log(strt);
+            // count=0;
+            myTimer=setInterval(strt,1000);
+        }
+        function strt(){
+            let op=document.getElementById("output");
+            // console.log("jkj")
+            count++;
+            op.innerHTML=count;
+        }
+        function stp(){
+            clearInterval(myTimer);
+        }
+    </script>
+</body>
+</html>

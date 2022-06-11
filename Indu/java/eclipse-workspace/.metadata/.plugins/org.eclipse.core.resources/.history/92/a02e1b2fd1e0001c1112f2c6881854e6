@@ -1,0 +1,11 @@
+package practice;
+
+public class MyApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student stu1 = new Student("Tiku Hazra",new Date(1,4,2003),new Address("parul","arambagh","Hooghly","WB","India"),78,89,45);
+		System.out.println(stu1);
+	}
+
+}

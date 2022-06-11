@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <span id="output"></span><br><br>
+   <button onclick="show('A')" id="btn1" name="btn1" type="button">A</button>
+   <button onclick="show('B')" id="btn2" name="btn2" type="button">B</button>
+   <button onclick="show('C')" id="btn3" name="btn3" type="button">C</button>
+   <script>
+       function show(num){
+            let display=document.getElementById("output");
+            display.innerHTML=display.innerHTML+num;
+       }
+   </script> 
+</body>
+</html>

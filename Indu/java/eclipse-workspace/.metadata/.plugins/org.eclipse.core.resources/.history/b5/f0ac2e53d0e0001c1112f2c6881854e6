@@ -1,0 +1,10 @@
+package practice;
+
+public class Student {
+	String name;
+	Date dob;
+	Address address;
+	int bengali;
+	int english;
+	int math;
+}

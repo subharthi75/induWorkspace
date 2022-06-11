@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <form>
+     Username:<input type="text" name="user" id="user" placeholder="Enter username" autofocus><br><br>
+     Password:<input type="password" name="word" id="word" placeholder="Enter password"><br><br>
+     <button onclick="checking()" type="button" id="btn" name="btn">Login</button><br><br>
+     <input type="text" name="condition_check" id="condition_check" readonly>
+ </form>   
+ <script>
+     function checking(){
+         let txt=document.getElementById("user");
+         let psrd=document.getElementById("word");
+         let check=document.getElementById("condition_check");
+         if((txt.value=="abc" && psrd.value=="123")||(txt.value=="shreya" && psrd.value=="sh621")||(txt.value=="surya" && psrd.value=="su23d")||(txt.value=="tiku" && psrd.value=="tkj116")){
+              check.value="success";
+         }else{
+             check.value="failed";
+         }
+     }
+ </script>
+</body>
+</html>

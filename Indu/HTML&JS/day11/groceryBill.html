@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Grocery Store</h1><hr><br>
+    <table border="1">
+        <thead>
+            <tr>
+            <th>Sl</th>
+            <th>Product</th>
+            <th>Rate</th>
+            <th>Qty</th>
+            <th>Total</th>
+            </tr>
+        </thead><br>
+        <tbody id="grocery"></tbody>
+    </table><br>
+    <form id="groceryBill">
+        Grand Total:<span id="op"></span>Rs<br><br>
+        Product:<input type="text" id="product"><br><br>
+        Rate:<input type="number" id="rate"><br><br>
+        Qty:<input type="number" id="qty"><br><br>
+        <button onclick="addBill()" id="btn" type="button">Add</button>
+    </form>
+    <script>
+        let slNo = 1;
+        function addBill(){
+            let tb=document.getElementById("grocery");
+            let op=document.getElementById("op");
+            let product=document.getElementById("product");
+            let rate=document.getElementById("rate");
+            let qty=document.getElementById("qty");
+            tb.innerHTML=tb.innerHTML+`<tr>
+                <td>${slNo}</td>
+                <td>${product.value}</td>
+                <td>${rate.value}</td>
+                <td>${qty.value}</td>
+                <td>${rate.value*qty.value}</td>
+                </tr>`;
+                groceryBill.reset();
+                slNo=slNo+1;
+        }
+
+    </script>
+</body>
+</html>

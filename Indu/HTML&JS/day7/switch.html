@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Name:<input type="text" id="nm" name="nm" placeholder="Enter your name"><br><br>
+    Age:<span id="output" name="output"></span><br><br>
+    <button onclick="swtch()" id="btn" name="btn">Go</button>
+</body>
+<script>
+    function swtch(){
+        let nm=document.getElementById("nm");
+        let op=document.getElementById("output");
+        switch(nm.value){
+            case "Ram":
+                op.innerHTML="15"
+                break;
+            case "Shyam":
+                op.innerHTML="25"
+                break;
+            case "Indu":
+                op.innerHTML="10"
+                break;
+            case "Surya":
+                op.innerHTML="12"
+                break;
+            case "Tiku":
+                op.innerHTML="18"
+                break;
+            case "Vuchu":
+                op.innerHTML="26"
+                break;
+            case "Chandra":
+                op.innerHTML="13"
+                break;
+            default:
+                op.innerHTML="101"    
+        }
+    }
+</script>
+</html>

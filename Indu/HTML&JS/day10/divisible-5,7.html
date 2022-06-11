@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Upto:<input type="number" id="num" name="num"><br><br>
+        <span id="op"></span>
+        <button onclick="calc()" type="button" id="btn" name="btn">Go</button>
+    </form> 
+    <script>
+        function calc(){
+            let n=document.getElementById("num");
+            let op=document.getElementById("op");
+            let num=parseInt(n.value);
+            let s=0;
+            for(let i=1; i<num; i++){ 
+                if(i % 5==00 && i % 7==00){
+                    s++
+                }
+            }
+            op.innerHTML=s;
+            
+        }
+    </script>
+</body>
+</html>

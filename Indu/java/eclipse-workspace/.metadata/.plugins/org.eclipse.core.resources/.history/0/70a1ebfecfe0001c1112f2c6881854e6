@@ -1,0 +1,24 @@
+package practice;
+
+public class Date {
+	int day;
+	int month;
+	int year;
+	
+	
+	Date(int d, int m, int y){
+		this.day=d;
+		this.month=m;
+		this.year=y;
+	}
+	
+	void print() {
+		System.out.println("[Day:"+this.day+", Month: "+this.month+", Year: "+this.year+" ]");
+	}
+	
+	@Override
+	String toString() {
+		return "[Day:"+this.day+", Month: "+this.month+", Year: "+this.year+" ]";
+	}
+	
+}

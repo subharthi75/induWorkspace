@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form>
+      Offer Option:<select id="option">
+          <option value=30>A</option>
+          <option value=20>B</option>
+          <option value=50>C</option>
+          <option value=70>D</option>
+          <option value=40>E</option>
+        </select><br><br>
+        Mango:<button onclick="subtract()" type="button" id="submit">-</button>
+        <input type="number" name="count" placeholder="Count" required id="count" value="0">
+         <button onclick="sum()" type="button" id="click">+</button>
+         (30Rs per kg)<br><br>
+         Price:<span id="output"></span>
+  </form>  
+  <script>
+    function sum(){
+        let count=document.getElementById("count");
+        let sum=parseInt(count.value)+1;
+        count.value=sum;
+        calc();
+    }
+    function subtract(){
+        let count=document.getElementById("count");
+        let subtract=parseInt(count.value)-1;
+        count.value=subtract;
+        calc();
+    }
+    function calc(){
+        let kg=document.getElementById("count");
+        let ttl=(kg.value)*30;
+        let op=document.getElementById("output");
+        let option = document.getElementById("option");
+        let dis=ttl*option.value/100;
+        let final=ttl-dis;
+        op.innerHTML=final;
+    }
+</script>
+</body>
+</html>

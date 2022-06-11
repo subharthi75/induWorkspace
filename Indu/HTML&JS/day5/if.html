@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Count:<button onclick="mywork();" type="button" id="submit" value="10">-</button>
+        <input type="number" name="count" placeholder="Count" required id="count" value="20" min="10" >
+         <button onclick="subject();"  type="button" id="click" value="30">+</button>
+    </form>
+    <script>
+        function subject(){
+            let count=document.getElementById("count");
+
+            if(count.value<30){
+                let sum=parseInt(count.value)+1;
+                count.value=sum;
+            }else{
+                alert("greater than 30 not allowed");
+                //count.value=30;
+            }
+            }
+        function mywork(){
+            let count=document.getElementById("count");
+
+            if(count.value>10){
+                let subtract=parseInt(count.value)-1;
+                count.value=subtract;
+        }else{
+            alert("less than 10 not allowed");
+    //     count.value=30;
+           }
+           }
+    // function myjob(){
+    //     let count=document.getElementById("count")
+    //    
+    //     }
+    // }
+    // function myjob1(){
+    //     let count=document.getElementById("count")
+    //     if(count.value<10){
+    //     alert("less than 10 not allowed");
+    //     count.value=10
+    //     }
+    // }
+    
+    
+    
+
+    </script>
+</body>
+</html>

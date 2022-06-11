@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1653395638 source:c:\users\subha\documents\indu\c\codeblocks\factorialfunction\main.c
+	<stdio.h>
+	<stdlib.h>
+

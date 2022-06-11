@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1653290765 source:c:\users\subha\documents\indu\c\codeblocks\starsprints_2\main.c
+	<stdio.h>
+	<stdlib.h>
+

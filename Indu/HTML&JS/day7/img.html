@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./image/tree_img.jpg" id="bigPicture" height="200"><br><br>
+    <img src="./image/pink.jpg" id="pink" height="50" width="60" onmouseover="changePic(this)">
+    <img src="./image/forest.jpg" id="forest" height="50" width="60" onmouseover="changePic(this)">
+    <img src="./image/flower.jpg" id="flower" height="50" width="60" onmouseover="changePic(this)">
+    <img src="./image/pink1.jpg" id="pnk" height="50" width="60" onmouseover="changePic(this)"><br><br>
+    <img src="./image/mount.jpg" id="mount" height="50" width="60" onmouseover="changePic(this)">
+    <img src="./image/sea.jpg" id="sea" height="50" width="60" onmouseover="changePic(this)">
+    <img src="./image/water.jpg" id="water" height="50" width="60" onmouseover="changePic(this)">
+    <img src="./image/waterfall.jpg" id="fall" height="50" width="60" onmouseover="changePic(this)">
+    <script>
+        function changePic(obj){
+            console.log(obj)
+            let bp=document.getElementById("bigPicture");
+            bp.src=obj.src;
+        }
+    </script>
+</body>
+</html>

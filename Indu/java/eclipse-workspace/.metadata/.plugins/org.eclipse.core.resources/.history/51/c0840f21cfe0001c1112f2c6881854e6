@@ -1,0 +1,9 @@
+package practice;
+
+public class Address {
+	String street;
+	String city;
+	String district;
+	String state;
+	String country;
+}

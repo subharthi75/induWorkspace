@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Name:<input type="text" id="text" name="text" placeholder="Enter your name"><br><br>
+        Age:<input type="number" id="number" name="number" placeholder="Enter your age"><br><br>
+        <button onclick="check()" type="button" name="button" id="button">Check</button><br><br>
+        <input type="text" id="allow" name="allow" readonly>
+    </form>
+    <script>
+        function check(){
+            let tbox=document.getElementById("text");
+            let age=document.getElementById("number");
+            //let sum=(tbox.value)
+            //tbox.value=sum;
+            
+            if((tbox.value=="shreya"||tbox.value=="surya"||tbox.value=="tiku")&&(age.value>=10&&age.value<=30)){
+                let allow=document.getElementById("allow");
+                //let text=(allow.value)
+                allow.value="allowed";
+            }else{
+                allow.value="not allowed";
+            }
+        }
+    </script>
+</body>
+</html>

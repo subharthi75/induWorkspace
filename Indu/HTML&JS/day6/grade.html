@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form>
+    Marks:<input type="number" id="marks" name="marks" placeholder="Enter your marks" autofocus><br><br>
+    Grade:<span id="output"></span><br><br>
+    <button onclick="grd()" type="button" id="btn" name="btn" >Calculate</button>
+</form> 
+<script>
+    function grd(){
+        let score=document.getElementById("marks");
+        let op=document.getElementById("output");
+    
+        if(score.value>=90){
+            op.innerHTML="AA";
+        }else if(score.value>=80){
+            op.innerHTML="A+";
+        }else if(score.value>=70){
+            op.innerHTML="A";
+        }else if(score.value>=60){
+            op.innerHTML="B";
+        }else if(score.value>=50){
+            op.innerHTML="C";
+        }else if(score.value>=40){
+            op.innerHTML="D";
+        }else{
+            op.innerHTML="fail";
+        }
+    }
+</script>   
+</body>
+</html>
+
+
+
+
+
+
+
+
+

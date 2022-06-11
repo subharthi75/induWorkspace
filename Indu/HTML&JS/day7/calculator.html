@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="display" readonly><br><br>
+        <table>
+            <tr>
+                <td><button onclick="cleanDisplay()" type="button">CE</button></td>
+                <td><button onclick="show('(')" type="button">(</button></td>
+                <td><button onclick="show(')')" type="button">)</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="show('1')" type="button">1</button></td>
+                <td><button onclick="show('2')" type="button">2</button></td>
+                <td><button onclick="show('3')" type="button">3</button></td>
+                <td><button onclick="show('+')" type="button">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="show('4')" type="button">4</button></td>
+                <td><button onclick="show('5')" type="button">5</button></td>
+                <td><button onclick="show('6')" type="button">6</button></td>
+                <td><button onclick="show('-')" type="button">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="show('7')" type="button">7</button></td>
+                <td><button onclick="show('8')" type="button">8</button></td>
+                <td><button onclick="show('9')" type="button">9</button></td>
+                <td><button onclick="show('*')" type="button">*</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="show('.')" type="button">.</button></td>
+                <td><button onclick="show('0')" type="button">0</button></td>
+                <td><button onclick="eql()" type="button">=</buton></td>
+                <td><button onclick="show('/')" type="button">/</button></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function show(num){
+            let display=document.getElementById("display");
+            display.value=display.value+num;
+        }
+        function cleanDisplay(){
+            let display=document.getElementById("display");
+            display.value="";
+        }
+        function eql(){
+            let display=document.getElementById("display");
+            let d=eval(display.value);
+            display.value=d;
+        }
+    </script>
+</body>
+</html>

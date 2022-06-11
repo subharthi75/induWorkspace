@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form>
+      Celcious:<input type="number" id="celcious" name="celcious"><br><br>
+      Ferenheit:<input type="number" id="output" name="frnhit"><br><br>
+      <button onclick="calcFerenheit()" type="button" name="btn">C-F</button>
+      <button onclick="calcCelcious()" type="button" name="bton">F-C</button>
+  </form>  
+  <script>
+      function calcFerenheit(){
+          let celcious=document.getElementById("celcious");
+          let frnhit=document.getElementById("output");
+          frnhit.value=(celcious.value*9+160)/5;
+          let op=eval(frnhit.value);
+          frnhit.value=op;
+      }
+      function calcCelcious(){
+          let celcious=document.getElementById("celcious");
+          let frnhit=document.getElementById("output");
+          celcious.value=(frnhit.value-32)*5/9;
+          let op=eval(celcious.value);
+          celcious.value=op;
+      }
+  </script>
+</body>
+</html>

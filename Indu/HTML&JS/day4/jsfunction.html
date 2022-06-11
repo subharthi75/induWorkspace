@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form>
+       <input type="number" id="num1">+
+       <input type="number" id="num2">=
+       <span id="output1"></span><br><br>
+      
+       
+       <input type="number" id="num3">-
+       <input type="number" id="num4">=
+       <span id="output2"></span><br><br>
+      
+      
+       <input type="number" id="num5">*
+       <input type="number" id="num6">=
+       <span id="output3"></span><br><br>
+       
+      
+       <input type="number" id="num7">/
+       <input type="number" id="num8">=
+       <span id="output4"></span><br><br>
+       
+       <button onclick="add();subtract();multiply();division()" type="button">go</button>
+    </form>
+   <script>
+     function add(){
+           let n1=document.getElementById("num1");
+           let n2=document.getElementById("num2");
+           let sum=parseInt(n1.value)+parseInt(n2.value);
+           let op=document.getElementById("output1");
+           op.innerHTML=sum;
+     }
+     function subtract(){
+            n1=document.getElementById("num3");
+            n2=document.getElementById("num4");
+            sum=n1.value-n2.value;
+            op=document.getElementById("output2");
+           op.innerHTML=sum; 
+     } 
+     function multiply(){
+            n1=document.getElementById("num5");
+            n2=document.getElementById("num6");
+            sum=n1.value*n2.value;
+            op=document.getElementById("output3");
+           op.innerHTML=sum; 
+     } 
+     function division(){
+            n1=document.getElementById("num7");
+            n2=document.getElementById("num8");
+            sum=n1.value/n2.value;
+            op=document.getElementById("output4");
+           op.innerHTML=sum; 
+     } 
+   </script>
+</body>
+</html>

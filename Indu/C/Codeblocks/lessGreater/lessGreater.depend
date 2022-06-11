@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1653049322 source:c:\users\subha\documents\indu\c\codeblocks\lessgreater\main.c
+	<stdio.h>
+	<stdlib.h>
+

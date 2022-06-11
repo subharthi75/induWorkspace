@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1653367893 source:c:\users\subha\documents\indu\c\codeblocks\printnum_3\main.c
+	<stdio.h>
+	<stdlib.h>
+

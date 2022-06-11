@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1653311251 source:c:\users\subha\documents\indu\c\codeblocks\starprint_6\main.c
+	<stdio.h>
+	<stdlib.h>
+

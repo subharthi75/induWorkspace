@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My Cart</h1><hr><br>
+    <form>
+    Mango:<button onclick="mango1()" type="button" id="rate" name="button">-</button>
+    <input type="number" name="count" placeholder="Count" required id="count" value="0" min="10" >
+     <button onclick="mango2();" type="button" id="click" value="30">+</button>
+     (25 per pc) <br><br>
+    Apple:<button onclick="apple1()" type="button" id="subtraction" name="sub_button">-</button>
+    <input type="number" name="number" placeholder="Number" id="number" required value="0">
+    <button onclick="apple2()" type="button" id="addition" name="add_button">+</button>
+    (10 per pc)<br><br>
+    Orange:<button onclick="orange1()" type="button" id="less" name="stract">-</button>
+    <input type="number" name="nm" placeholder="Number" id="lemon" required  value="0">
+    <button onclick="orange2()" type="button" id="greater" name="add_number">+</button>
+    (20 per pc)<hr><br>
+    <u>Total:</u>
+    <span id="output"></span> <u>pc</u><br><br>
+    Total Price:<span id="output1"></span> Rs.<br><br>
+    <!-- <button onclick="orng()" type="button">go</button> -->
+    </form>
+    <script>
+     function mango1(){
+            let count=document.getElementById("count");
+            let sum=parseInt(count.value)-1;
+            count.value=sum;
+            //let op=document.getElementById("output")
+            //op.innerHTML=sum;
+            totalCalc();
+            totalpc();
+     }
+     function mango2(){
+             let count=document.getElementById("count");
+            let add=parseInt(count.value)+1;
+            count.value=add;
+            //let op=document.getElementById("output")
+            //op.innerHTML=add;
+            totalCalc();
+            totalpc(); 
+     }
+     function apple1(){
+        let count=document.getElementById("number");
+        let subtract=(number.value)-1;
+        count.value=subtract;
+        //let op=document.getElementById("output")
+        //op.innerHTML=subtract;
+        totalCalc();
+        totalpc();
+     }
+     function apple2(){
+        let count=document.getElementById("number");
+        let sum1=parseInt(number.value)+1;
+        count.value=sum1;
+        //let op=document.getElementById("output")
+        //op.innerHTML=sum1;
+        totalCalc();
+        totalpc();
+     }
+     function orange1(){
+        let count=document.getElementById("lemon");
+        let subtract1=parseInt(lemon.value)-1;
+        count.value=subtract1;
+        //let op=document.getElementById("output")
+        //op.innerHTML=subtract1;
+        totalCalc();
+        totalpc();
+     }
+     function orange2(){
+        let count=document.getElementById("lemon");
+        let sum2=parseInt(lemon.value)+1;
+        count.value=sum2;
+        //let op=document.getElementById("output")
+        //op.innerHTML=sum2;
+        totalCalc();
+        totalpc();
+     }
+     function totalCalc(){
+          let n1=document.getElementById("count");
+          let n2=document.getElementById("number");
+          let n3=document.getElementById("lemon");
+          let math=parseInt(n1.value)+parseInt(n2.value)+parseInt(n3.value);
+          let op=document.getElementById("output")
+          op.innerHTML=math;
+     }
+     function totalpc(){
+          let n1=document.getElementById("count");
+          let n2=document.getElementById("number");
+          let n3=document.getElementById("lemon");
+          let sum_add=(n1.value)*25+parseInt(n2.value)*10+parseInt(n3.value)*20;
+          let op=document.getElementById("output1");
+          op.innerHTML=sum_add;
+     }
+    </script>
+</body>
+</html>

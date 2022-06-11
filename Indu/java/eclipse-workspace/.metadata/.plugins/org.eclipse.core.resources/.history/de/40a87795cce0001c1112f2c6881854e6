@@ -1,0 +1,16 @@
+package practice;
+
+import java.util.Scanner;
+
+public class Student {
+
+	public static void main(String[] args) {
+		Scanner indu = new Scanner(System.in);
+		System.out.print("Enter a number: ");
+		int a = indu.nextInt();
+		for(int i=1; i<=a; i++) {
+			System.out.println(i);
+		}
+	}
+
+}

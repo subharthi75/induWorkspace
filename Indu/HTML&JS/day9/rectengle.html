@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Area and Perimeter of Rectengle</h1><hr><br>
+    Length:<input type="number" id="length" name="length">
+    width:<input type="number" id="width" name="width">
+    <button onclick="calculation()" id="btn" name="btn" type="button">Calculation</button><br><br>
+    Area:<span id="output1"></span><br><br>
+    Perimeter:<span id="output2"></span>
+    <script>
+        function calculation(){
+            let length=document.getElementById("length");
+            let width=document.getElementById("width");
+            let op1=document.getElementById("output1");
+            let op2=document.getElementById("output2");
+            let area=length.value*width.value;
+            let perimeter=2*(parseInt(length.value)+parseInt(width.value));
+            op1.innerHTML=area;
+            op2.innerHTML=perimeter;
+        }
+    </script> 
+</body>
+</htm

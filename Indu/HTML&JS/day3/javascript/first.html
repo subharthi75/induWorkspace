@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <button onclick="alert('Hello again');">click again 
+</button>
+<button id="alert">click me</button> 
+<script>
+    let btn=document.getElementById("alert");
+    btn.addEventListener("click",()=>{alert("Hi,shreya!Welcome to JS")},false);
+</script> 
+<button onclick="confirm('are you sure?')">check</button> 
+<button onclick="alert(prompt('put your name')+',Welcome to world!')">greet</button>
+<button onclick="domyjob()">Do My Job</button>
+<script>
+    function domyjob(){ if(confirm("Are you Shreya?")){
+        alert("Welcome to my house");
+    }else{
+        alert("You are not allowed");
+    }}
+</script>
+   <button onclick="domy2ndjob()">2nd job </button>
+   <script>
+       function domy2ndjob(){
+           let name=prompt("write your name");
+           if(name=="shreya"){
+               alert("welcome buddy!");
+           }else{
+               alert("who are you!!!");
+           }
+       }
+   </script>
+
+</body>
+</html>
